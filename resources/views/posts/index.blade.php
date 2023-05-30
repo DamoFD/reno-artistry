@@ -15,5 +15,9 @@
             <p>No listings found.</p>
         @endunless
     </div>
+
+    <div class="pagination">
+        {{ $posts->links() }}
+    </div>
 </section>
 </x-layout>

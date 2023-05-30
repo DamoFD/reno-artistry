@@ -10,7 +10,7 @@ class PostController extends Controller
     // Show all posts
     public function index() {
         return view('posts.index', [
-            'posts' => Post::latest()->filter(request(['tag', 'search']))->get()
+            'posts' => Post::latest()->filter(request(['tag', 'search']))->paginate(6)
         ]);
     }
 
@@ -30,11 +30,16 @@ class PostController extends Controller
     public function store(Request $request) {
         $formFields = $request->validate([
             'title' => 'required',
+            'image' => 'required',
             'email' => 'nullable|email',
             'website' => 'nullable|url',
             'tags' => 'required',
             'description' => 'required'
         ]);
+
+        if($request->hasFile('image')) {
+            $formFields['image'] = $request->file('image')->store('uploads', 'public');
+        }
 
         Post::create($formFields);
 

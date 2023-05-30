@@ -34,5 +34,8 @@ Route::get('/posts/create', [PostController::class, 'create']);
 // Store Post Data
 Route::post('/posts', [PostController::class, 'store']);
 
+// Show Edit Form
+Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
+
 // Single Post
 Route::get('/posts/{post}', [PostController::class, 'show']);

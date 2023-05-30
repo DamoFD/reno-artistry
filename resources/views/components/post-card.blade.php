@@ -1,7 +1,7 @@
 @props(['post'])
 
 <div class="grid_item">
-    <img class="grid_img" src="{{ asset('images/reno-artistry-logo.webp') }}" />
+    <img class="grid_img" src="{{ $post->image ? asset('storage/' . $post->image) : asset('/images/reno-artistry-logo.webp') }}" />
     <div class="grid_content_container">
         <a href="/reno-artistry/public/posts/{{ $post->id }}">
             <h2 class="font-mont-regular color-secondary font-size-lg">

@@ -5,7 +5,7 @@
 <div>
 <h1>Create a Post</h1>
 <p>Post your local Reno artwork</p>
-<form method="POST" action="/reno-artistry/public/posts">
+<form method="POST" action="/reno-artistry/public/posts" enctype="multipart/form-data">
     @csrf
     <label>Title*</label>
     <input value="{{ old('title') }}" type="text" name="title" placeholder="Example: My Amazing Masterpiece" />
@@ -35,8 +35,13 @@
         <p>{{ $message }}</p>
     @enderror
     
-    {{--  <label>Image</label>
-    <input type="file" name="image" /> --}}
+    <label>Image</label>
+    <input type="file" name="image" />
+
+    @error('image')
+        <p>{{ $message }}</p>
+    @enderror
+
     <label>Description</label>
     <textarea placeholder="Talk about the what, why, and how with your art." name="description">
         {{ old('description') }}
