@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +15,18 @@ use App\Models\Post;
 |
 */
 
+// Common Resource Routes:
+// index - Show all posts
+// show - Show single post
+// create - Show form to create new post
+// store - Store new post
+// edit - Show form to edit post
+// update - Update post
+// destroy - Delete post
+
+
 // All Posts
-Route::get('/', function () {
-    return view('posts', [
-        'heading' => 'Latest Posts',
-        'posts' => Post::all()
-    ]);
-});
+Route::get('/', [PostController::class, 'index']);
 
 // Single Post
-Route::get('/posts/{id}', function($id) {
-    return view('post', [
-        'post' => Post::find($id)
-    ]);
-});
+Route::get('/posts/{post}', [PostController::class, 'show']);

@@ -83,10 +83,14 @@
         li {
             padding: 2px 15px;
             background-color: $color-primary;
-            color: $color-bg-1;
             margin: 0px 5px;
             border-radius: 20px;
-            font-family: $font-roboto-regular;
+
+            a {
+                text-decoration: none;
+                color: $color-bg-1;
+                font-family: $font-roboto-regular;
+            }
         }
     }
 

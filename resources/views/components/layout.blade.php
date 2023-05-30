@@ -37,7 +37,7 @@
     </header>
     <!--!start #header-->
     <main>
-    @yield('content')
+    {{ $slot }}
 </main>
 
 <!-- Custom JS -->
