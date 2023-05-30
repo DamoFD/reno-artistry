@@ -9,7 +9,7 @@
         <br />
         <span class="line-height"> Of Imagination </span>
       </h1>
-      <a class="font-rale-bold color-white-1 font-size-med btn" href="/"
+      <a class="font-rale-bold color-white-1 font-size-med btn" href="/reno-artistry/public/posts/create"
         >Add Your Creation</a
       >
     </div>

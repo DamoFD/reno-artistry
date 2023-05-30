@@ -40,7 +40,13 @@
     {{ $slot }}
 </main>
 
+<x-flash-message />
+
 <!-- Custom JS -->
 <script src="{{ asset('js/app.js') }}"></script>
+
+<!-- Alpine JS -->
+<script src="//unpkg.com/alpinejs" defer></script>
+
 </body>
 </html>

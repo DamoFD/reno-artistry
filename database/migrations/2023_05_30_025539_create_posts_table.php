@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('tags');
-            $table->string('website');
+            $table->string('website')->nullable();
+            $table->string('email')->nullable();
             $table->longText('description');
             $table->timestamps();
         });

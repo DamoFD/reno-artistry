@@ -472,4 +472,24 @@ textarea, textarea:focus {
   background-color: #E3E2DF;
 }
 
+/* Create Section */
+/* Mobile-First */
+#create-post {
+  padding-top: 100px;
+  background-color: #E3E2DF;
+}
+#create-post form {
+  display: flex;
+  flex-direction: column;
+}
+#create-post input {
+  height: 40px;
+}
+#create-post textarea {
+  height: 80px;
+}
+#create-post button {
+  height: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */

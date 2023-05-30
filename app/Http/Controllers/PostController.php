@@ -20,4 +20,24 @@ class PostController extends Controller
             'post' => $post
         ]);
     }
+
+    // Show Create Form
+    public function create() {
+        return view('posts.create');
+    }
+
+    // Store Listing Data
+    public function store(Request $request) {
+        $formFields = $request->validate([
+            'title' => 'required',
+            'email' => 'nullable|email',
+            'website' => 'nullable|url',
+            'tags' => 'required',
+            'description' => 'required'
+        ]);
+
+        Post::create($formFields);
+
+        return redirect('/')->with('message', 'Listing created successfully!');
+    }
 }

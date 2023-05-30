@@ -20,6 +20,7 @@ class PostFactory extends Factory
             'title' => $this->faker->sentence(),
             'tags' => 'watercolor,paint,landscape',
             'website' => $this->faker->url(),
+            'email' => $this->faker->email(),
             'description' => $this->faker->paragraph(5),
         ];
     }
