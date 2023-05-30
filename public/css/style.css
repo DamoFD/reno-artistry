@@ -462,4 +462,11 @@ textarea, textarea:focus {
   }
 }
 
+/* Post Section */
+/* Mobile-First */
+#post {
+  padding-top: 100px;
+  background-color: #E3E2DF;
+}
+
 /*# sourceMappingURL=style.css.map */
