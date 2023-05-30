@@ -4,6 +4,8 @@
 @include('partials._hero')
 
 <section id="listings">
+@include('partials._search')
+
     <div class="grid">
         @unless (count($posts) == 0)
             @foreach ($posts as $post)

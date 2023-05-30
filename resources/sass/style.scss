@@ -1,0 +1,31 @@
+@font-face {
+    font-family: mont-bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: mont-regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: rale-bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-display: swap;
+}
+
+@import'./includes/variables.scss';
+@import'./includes/global.scss';
+@import'./includes/typography.scss';
+@import'./includes/color.scss';
+@import'./includes/header.scss';
+@import'./includes/hero.scss';
+@import'./includes/listings.scss';

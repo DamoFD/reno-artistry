@@ -33,6 +33,7 @@
         }
     },
     "scripts": {
+        "watchcss": "sass resources/sass/style.scss public/css/style.css --watch",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"

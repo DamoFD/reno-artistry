@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button, button:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input, input:focus {
+    border: none;
+    outline: none;
+}
+
+textarea, textarea:focus {
+    border: none;
+    outline: none;
+}

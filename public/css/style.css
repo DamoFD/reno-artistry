@@ -417,7 +417,7 @@ textarea, textarea:focus {
   display: flex;
   margin-top: 10px;
 }
-#listings .tag_container p {
+#listings .tag_container li {
   padding: 2px 15px;
   background-color: #9A1750;
   color: #E3E2DF;

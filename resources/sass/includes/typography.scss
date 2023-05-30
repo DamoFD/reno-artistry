@@ -1,0 +1,72 @@
+/* Typagraphy Classes */
+
+/* Fonts */
+.font-mont-bold {
+    font-family: $font-mont-bold;
+}
+
+.font-mont-regular {
+    font-family: $font-mont-regular;
+}
+
+.font-rale-bold {
+    font-family: $font-rale-bold;
+}
+
+.font-roboto-regular {
+    font-family: $font-roboto-regular;
+}
+
+/* Font Sizes */
+
+/* Mobile First */
+
+.font-size-xl {
+    font-size: 60px;
+}
+
+.font-size-lg {
+    font-size: 35px;
+}
+
+.font-size-med {
+    font-size: 25px;
+}
+
+.font-size-sm {
+    font-size: 23px;
+}
+
+/* Galaxy Fold */
+@media only screen and (max-width: 350px) {
+    .font-size-xl {
+        font-size: 40px;
+    }
+
+    .font-size-lg {
+        font-size: 25px;
+    }
+
+    .font-size-med {
+        font-size: 20px;
+    }
+
+    .font-size-sm {
+        font-size: 16px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1075px){
+    .font-size-xl {
+        font-size: 100px;
+    }
+
+    .font-size-lg {
+        font-size: 75px;
+    }
+
+    .font-size-med {
+        font-size: 50px;
+    }
+}

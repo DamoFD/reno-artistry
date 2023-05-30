@@ -14,7 +14,7 @@
     <header id="header" class="header_main">
       <!--Primary Navigation-->
       <nav class="navbar">
-        <a href="">
+        <a href="/reno-artistry/public">
           <img
             src="{{ asset('images/reno-artistry-logo.webp') }}"
             class="header-img"
