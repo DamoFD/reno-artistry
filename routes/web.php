@@ -37,5 +37,11 @@ Route::post('/posts', [PostController::class, 'store']);
 // Show Edit Form
 Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
 
+// Update Post Data
+Route::put('/posts/{post}', [PostController::class, 'update']);
+
+// Delete Post
+Route::delete('/posts/{post}', [PostController::class, 'destroy']);
+
 // Single Post
 Route::get('/posts/{post}', [PostController::class, 'show']);

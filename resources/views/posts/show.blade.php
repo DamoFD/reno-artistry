@@ -11,4 +11,16 @@
     <a href="{{ $post->website }}">View Website</a>
 </section>
 
+<div>
+    <a href="/reno-artistry/public/posts/{{ $post->id }}/edit">
+        Edit
+    </a>
+
+    <form method="POST" action="/reno-artistry/public/posts/{{ $post->id }}">
+        @csrf
+        @method('DELETE')
+        <button type="submit">Delete</button>
+    </form>
+</div>
+
 </x-layout>
