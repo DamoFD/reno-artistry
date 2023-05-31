@@ -8,7 +8,8 @@
                 {{ $post->title }}
             </h2>
         </a>
-        <h3 class="font-rale-bold font-size-sm">John Doe</h3>
+        <p>{{ $post->created_at->format('F d, Y') }}</p>
+        <h3 class="font-rale-bold font-size-sm">{{ $post->user->name }}</h3>
         <x-post-tags :tagsCsv="$post->tags" />
     </div>
 </div>

@@ -492,4 +492,10 @@ textarea, textarea:focus {
   height: 40px;
 }
 
+/* Manage Section */
+/* Mobile-First */
+#manage {
+  padding-top: 200px;
+}
+
 /*# sourceMappingURL=style.css.map */

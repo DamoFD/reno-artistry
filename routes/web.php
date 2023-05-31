@@ -44,6 +44,9 @@ Route::put('/posts/{post}', [PostController::class, 'update'])->middleware('auth
 // Delete Post
 Route::delete('/posts/{post}', [PostController::class, 'destroy'])->middleware('auth');
 
+// Manage Posts
+Route::get('/posts/manage', [PostController::class, 'manage'])->middleware('auth');
+
 // Single Post
 Route::get('/posts/{post}', [PostController::class, 'show']);
 

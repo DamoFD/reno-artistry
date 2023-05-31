@@ -41,6 +41,8 @@ class PostController extends Controller
             $formFields['image'] = $request->file('image')->store('uploads', 'public');
         }
 
+        $formFields['user_id'] = auth()->id();
+
         Post::create($formFields);
 
         return redirect('/')->with('message', 'Post created successfully!');
@@ -53,6 +55,12 @@ class PostController extends Controller
 
     // Update Post Data
     public function update(Request $request, Post $post) {
+
+        // Logged in user check
+        if($post->user_id != auth()->id()) {
+            abort(403, 'Unauthorized Action');
+        }
+
         $formFields = $request->validate([
             'title' => 'required',
             'email' => 'nullable|email',
@@ -72,7 +80,18 @@ class PostController extends Controller
 
     // Delete Post
     public function destroy(Post $post) {
+
+        // Logged in user check
+        if($post->user_id != auth()->id()) {
+            abort(403, 'Unauthorized Action');
+        }
+
         $post->delete();
         return redirect('/')->with('message', 'Listing deleted successfully');
+    }
+
+    // Manage Posts
+    public function manage() {
+        return view('posts.manage', ['posts' => auth()->user()->posts()->get()]);
     }
 }
