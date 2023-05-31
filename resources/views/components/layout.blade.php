@@ -26,11 +26,37 @@
           <span class="bar"></span>
         </div>
         <ul class="nav no-search">
-          <li class="nav-item"><a class="" href="">Welcome John Doe</a></li>
+
+          @auth
           <li class="nav-item">
-            <a class="" href="/about">Manage Listings</a>
-          </li>
-          <li class="nav-item"><a class="" href="/portfolio">Logout</a></li>
+            <p>
+              Welcome {{ auth()->user()->name }}
+            </p>
+            </li>
+            <li class="nav-item">
+              <a class="" href="/reno-artistry/public/posts/manage">
+                Manage Listings
+              </a>
+            </li>
+            <li class="nav-item">
+              <form method="POST" action="/reno-artistry/public/logout">
+                @csrf
+                <button type="submit">Logout</button>
+              </form>
+            </li>
+
+            @else
+            <li class="nav-item">
+              <a class="" href="/reno-artistry/public/register">
+                Register
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/reno-artistry/public/login">
+                Login
+              </a>
+            </li>
+            @endauth
         </ul>
       </nav>
       <!--!Primary Navigation-->
