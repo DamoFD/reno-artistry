@@ -14,5 +14,5 @@
       >
     </div>
     <div class="overlay"></div>
-    <img class="hero_img" src="{{ asset('images/reno.jpg') }}" />
+    <img class="hero_img" src="{{ asset('images/reno.webp') }}" />
   </section>
