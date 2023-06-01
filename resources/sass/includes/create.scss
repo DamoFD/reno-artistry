@@ -11,6 +11,11 @@
         padding: 5px 10px;
         border-radius: 10px;
         text-decoration: none;
+        transition: background-color 0.5s ease;
+    }
+
+    .back:hover {
+        background-color: #65193A;
     }
 
     .container {
@@ -74,15 +79,33 @@
         transition: transform 0.5s ease;
     }
 
-    .button:hover {
+    button:hover {
         cursor: pointer;
         background: radial-gradient(86.59% 86.59% at 50% 50%, #c91f69 0%, #65193A 100%);
         transform: translateY(-5px);
     }
 
-    .button:active {
+    button:active {
         cursor: pointer;
         background: radial-gradient(86.59% 86.59% at 50% 50%, #A91958 0%, #65193A 100%);
         transform: translateY(5px);
+    }
+
+    .error {
+        color: rgb(192, 3, 3);
+        font-family: $font-roboto-regular;
+    }
+
+    /* Desktop */
+    @media only screen and (min-width: 900px) {
+
+        .back {
+            margin-left: 500px;
+        }
+
+        .container {
+            width: calc(100% - 1000px);
+            margin-left: 500px;
+        }
     }
 }

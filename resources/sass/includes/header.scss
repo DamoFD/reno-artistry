@@ -43,8 +43,9 @@
     background: none;
   }
   
-  .nav-item a:hover {
+  .nav-item a:hover, .nav-item button:hover {
     color: gray;
+    cursor: pointer;
   }
   
   /* MOBILE MENU & ANIMATION */

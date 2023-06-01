@@ -186,8 +186,9 @@ textarea, textarea:focus {
   background: none;
 }
 
-.nav-item a:hover {
+.nav-item a:hover, .nav-item button:hover {
   color: gray;
+  cursor: pointer;
 }
 
 /* MOBILE MENU & ANIMATION */
@@ -585,12 +586,17 @@ textarea, textarea:focus {
   padding-top: 100px;
   background-color: #E3E2DF;
   min-height: 100vh;
+  /* Desktop */
 }
 #create-post .back {
   margin-left: 16px;
   padding: 5px 10px;
   border-radius: 10px;
   text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+#create-post .back:hover {
+  background-color: #65193A;
 }
 #create-post .container {
   background-color: #DCDCDC;
@@ -643,15 +649,28 @@ textarea, textarea:focus {
   background: radial-gradient(86.59% 86.59% at 50% 50%, #A91958 0%, #65193A 100%);
   transition: transform 0.5s ease;
 }
-#create-post .button:hover {
+#create-post button:hover {
   cursor: pointer;
   background: radial-gradient(86.59% 86.59% at 50% 50%, #c91f69 0%, #65193A 100%);
   transform: translateY(-5px);
 }
-#create-post .button:active {
+#create-post button:active {
   cursor: pointer;
   background: radial-gradient(86.59% 86.59% at 50% 50%, #A91958 0%, #65193A 100%);
   transform: translateY(5px);
+}
+#create-post .error {
+  color: rgb(192, 3, 3);
+  font-family: "roboto-regular", sans-serif;
+}
+@media only screen and (min-width: 900px) {
+  #create-post .back {
+    margin-left: 500px;
+  }
+  #create-post .container {
+    width: calc(100% - 1000px);
+    margin-left: 500px;
+  }
 }
 
 /* Manage Section */
