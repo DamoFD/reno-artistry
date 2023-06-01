@@ -679,6 +679,7 @@ textarea, textarea:focus {
   padding-top: 100px;
   background-color: #E3E2DF;
   min-height: 100vh;
+  /* Desktop */
 }
 #manage h1 {
   margin-left: 8px;
@@ -703,7 +704,7 @@ textarea, textarea:focus {
 #manage button:hover {
   cursor: pointer;
 }
-#manage .container {
+#manage .container, #manage .item-container {
   width: calc(100% - 32px);
   margin-left: 16px;
   margin-top: 16px;
@@ -711,15 +712,6 @@ textarea, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-#manage .item-container {
-  width: calc(100% - 32px);
-  margin-left: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #DCDCDC;
-  margin-top: 16px;
 }
 #manage .item-text {
   max-width: 50%;
@@ -729,6 +721,15 @@ textarea, textarea:focus {
 }
 #manage .item-text p {
   margin-left: 8px;
+}
+@media only screen and (min-width: 900px) {
+  #manage .back {
+    margin-left: 500px;
+  }
+  #manage .container, #manage .item-container {
+    width: calc(100% - 1000px);
+    margin-left: 500px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
