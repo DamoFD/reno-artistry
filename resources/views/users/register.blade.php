@@ -37,7 +37,7 @@
         
         <button class="color-white-1 font-rale-bold" type="submit">Sign Up</button>
     </form>
-    <p class="account-text font-size-sm color-secondary font-roboto-regular">Already have an account? <a class="color-primary" href="/reno-artistry/public/login">Login</a></p>
+    <p class="font-size-sm color-secondary font-roboto-regular">Already have an account? <a class="color-primary" href="/reno-artistry/public/login">Login</a></p>
     </div>
     </section>
     </x-layout>

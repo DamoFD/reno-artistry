@@ -491,6 +491,7 @@ textarea, textarea:focus {
   margin-left: 16px;
   margin-top: 20px;
   border-radius: 20px;
+  padding-bottom: 20px;
 }
 #create-post h1 {
   padding-top: 20px;
@@ -511,14 +512,16 @@ textarea, textarea:focus {
   margin-top: 20px;
   color: #9A1750;
 }
-#create-post input {
-  height: 40px;
+#create-post input, #create-post textarea {
   border-radius: 10px;
   background-color: #E3E2DF;
   border: 2px solid #9A1750;
   font-size: 16px;
   color: #353535;
   font-family: "roboto-regular", sans-serif;
+}
+#create-post input {
+  height: 40px;
 }
 #create-post input::placeholder {
   color: #9B9B9B;
@@ -542,9 +545,6 @@ textarea, textarea:focus {
   cursor: pointer;
   background: radial-gradient(86.59% 86.59% at 50% 50%, #A91958 0%, #65193A 100%);
   transform: translateY(5px);
-}
-#create-post .account-text {
-  padding-bottom: 20px;
 }
 
 /* Manage Section */
