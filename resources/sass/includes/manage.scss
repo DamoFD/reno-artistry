@@ -3,5 +3,68 @@
 /* Mobile-First */
 
 #manage {
-    padding-top: 200px;
+    padding-top: 100px;
+    background-color: $color-bg-1;
+    min-height: 100vh;
+
+    h1 {
+        margin-left: 8px;
+    }
+
+    .back, .btn {
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .back {
+        margin-left: 16px;
+    }
+
+    .btn {
+        margin: 8px;
+    }
+
+    button {
+        background-color: rgb(207, 1, 1);
+        margin-top: 16px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .container {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-top: 16px;
+        background-color: $color-bg-2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item-container {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-bg-2;
+        margin-top: 16px;
+    }
+
+    .item-text {
+        max-width: 50%;
+
+        h2 {
+            margin-left: 8px;
+        }
+
+        p {
+            margin-left: 8px;
+        }
+    }
 }

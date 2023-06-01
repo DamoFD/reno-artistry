@@ -550,7 +550,59 @@ textarea, textarea:focus {
 /* Manage Section */
 /* Mobile-First */
 #manage {
-  padding-top: 200px;
+  padding-top: 100px;
+  background-color: #E3E2DF;
+  min-height: 100vh;
+}
+#manage h1 {
+  margin-left: 8px;
+}
+#manage .back, #manage .btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+#manage .back {
+  margin-left: 16px;
+}
+#manage .btn {
+  margin: 8px;
+}
+#manage button {
+  background-color: rgb(207, 1, 1);
+  margin-top: 16px;
+}
+#manage button:hover {
+  cursor: pointer;
+}
+#manage .container {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-top: 16px;
+  background-color: #DCDCDC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#manage .item-container {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DCDCDC;
+  margin-top: 16px;
+}
+#manage .item-text {
+  max-width: 50%;
+}
+#manage .item-text h2 {
+  margin-left: 8px;
+}
+#manage .item-text p {
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
