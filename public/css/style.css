@@ -175,7 +175,7 @@ textarea, textarea:focus {
   justify-self: end;
 }
 
-.nav-item a {
+.nav-item a, .nav-item p, .nav-item button {
   color: #353535;
   font-size: 30px;
   font-weight: bold;
@@ -183,6 +183,7 @@ textarea, textarea:focus {
   transition: color 0.3s ease-out;
   margin-right: 20px;
   font-family: "roboto-regular", sans-serif;
+  background: none;
 }
 
 .nav-item a:hover {
@@ -384,6 +385,18 @@ textarea, textarea:focus {
   background-color: #9A1750;
   font-family: "rale-bold", sans-serif;
 }
+#listings .btn-container {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+#listings .btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
 #listings .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -402,10 +415,14 @@ textarea, textarea:focus {
   padding: 20px 0px;
 }
 #listings .grid_item h2 {
-  font-size: 35px;
+  font-size: 30px;
+}
+#listings .grid_item a {
+  text-decoration: none;
 }
 #listings .grid_item h3 {
   color: #252525;
+  font-size: 25px;
 }
 #listings .grid_img {
   width: 290px;
@@ -415,6 +432,7 @@ textarea, textarea:focus {
 }
 #listings .tag_container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 #listings .tag_container li {
@@ -428,6 +446,19 @@ textarea, textarea:focus {
   color: #E3E2DF;
   font-family: "roboto-regular", sans-serif;
 }
+#listings .pagination-nav {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+#listings .pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: "roboto-regular", sans-serif;
+}
 @media only screen and (max-width: 350px) {
   #listings .grid_img {
     width: 200px;
@@ -435,6 +466,16 @@ textarea, textarea:focus {
   }
 }
 @media only screen and (min-width: 900px) {
+  #listings .btn-container {
+    width: calc(100% - 140px);
+    margin-left: 70px;
+    margin-top: 32px;
+  }
+  #listings .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+  }
   #listings .search-bar {
     width: calc(100% - 140px);
     margin-left: 70px;
@@ -456,12 +497,28 @@ textarea, textarea:focus {
   #listings .grid_item {
     flex-direction: row;
   }
-  #listings .grid_img {
+  #listings .grid_item .img_link {
     width: 40%;
+    margin-right: 20px;
+  }
+  #listings .grid_item h2 {
+    font-size: 40px;
+  }
+  #listings .grid_img {
+    width: 100%;
     height: 318px;
   }
   #listings .tag_container {
     margin-top: 40px;
+  }
+  #listings .pagination-nav {
+    width: calc(100% - 140px);
+    margin-left: 70px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  #listings .pagination {
+    font-size: 30px;
   }
 }
 
@@ -470,6 +527,27 @@ textarea, textarea:focus {
 #post {
   padding-top: 100px;
   background-color: #E3E2DF;
+  min-height: 100vh;
+}
+#post .back {
+  margin-left: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#post .container {
+  background-color: #DCDCDC;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#post img {
+  width: 80%;
 }
 
 /* Create Section */

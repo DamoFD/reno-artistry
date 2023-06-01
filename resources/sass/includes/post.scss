@@ -4,4 +4,28 @@
 #post {
     padding-top: 100px;
     background-color: $color-bg-1;
+    min-height: 100vh;
+
+    .back {
+        margin-left: 16px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .container {
+        background-color: $color-bg-2;
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-top: 20px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 80%;
+    }
 }
