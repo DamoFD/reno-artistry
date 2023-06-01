@@ -477,19 +477,74 @@ textarea, textarea:focus {
 #create-post {
   padding-top: 100px;
   background-color: #E3E2DF;
+  min-height: 100vh;
+}
+#create-post .back {
+  margin-left: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#create-post .container {
+  background-color: #DCDCDC;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#create-post h1 {
+  padding-top: 20px;
+}
+#create-post h1, #create-post p {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-top: 20px;
 }
 #create-post form {
   display: flex;
   flex-direction: column;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+}
+#create-post label {
+  font-family: "rale-bold", sans-serif;
+  margin-top: 20px;
+  color: #9A1750;
 }
 #create-post input {
   height: 40px;
+  border-radius: 10px;
+  background-color: #E3E2DF;
+  border: 2px solid #9A1750;
+  font-size: 16px;
+  color: #353535;
+  font-family: "roboto-regular", sans-serif;
+}
+#create-post input::placeholder {
+  color: #9B9B9B;
 }
 #create-post textarea {
   height: 80px;
 }
 #create-post button {
   height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: radial-gradient(86.59% 86.59% at 50% 50%, #A91958 0%, #65193A 100%);
+  transition: transform 0.5s ease;
+}
+#create-post .button:hover {
+  cursor: pointer;
+  background: radial-gradient(86.59% 86.59% at 50% 50%, #c91f69 0%, #65193A 100%);
+  transform: translateY(-5px);
+}
+#create-post .button:active {
+  cursor: pointer;
+  background: radial-gradient(86.59% 86.59% at 50% 50%, #A91958 0%, #65193A 100%);
+  transform: translateY(5px);
+}
+#create-post .account-text {
+  padding-bottom: 20px;
 }
 
 /* Manage Section */
