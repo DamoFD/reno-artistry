@@ -40,6 +40,10 @@
             background-color: $color-primary;
             font-family: $font-rale-bold;
         }
+
+        .search-button:hover {
+            cursor: pointer;
+        }
     }
 
     .btn-container {

@@ -399,6 +399,9 @@ textarea, textarea:focus {
   background-color: #9A1750;
   font-family: "rale-bold", sans-serif;
 }
+#listings .search-bar .search-button:hover {
+  cursor: pointer;
+}
 #listings .btn-container {
   width: calc(100% - 32px);
   margin-left: 16px;
