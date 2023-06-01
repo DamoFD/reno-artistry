@@ -19,6 +19,7 @@
         margin-left: 16px;
         margin-top: 20px;
         border-radius: 20px;
+        padding-top: 20px;
         padding-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -27,5 +28,38 @@
 
     img {
         width: 80%;
+    }
+
+    .tag_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        li {
+            padding: 2px 15px;
+            background-color: $color-primary;
+            margin: 0px 5px;
+            border-radius: 20px;
+
+            a {
+                text-decoration: none;
+                color: $color-bg-1;
+                font-family: $font-roboto-regular;
+            }
+        }
+    }
+
+    p, h1, h2 {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
     }
 }

@@ -541,6 +541,7 @@ textarea, textarea:focus {
   margin-left: 16px;
   margin-top: 20px;
   border-radius: 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -548,6 +549,34 @@ textarea, textarea:focus {
 }
 #post img {
   width: 80%;
+}
+#post .tag_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+#post .tag_container li {
+  padding: 2px 15px;
+  background-color: #9A1750;
+  margin: 0px 5px;
+  border-radius: 20px;
+}
+#post .tag_container li a {
+  text-decoration: none;
+  color: #E3E2DF;
+  font-family: "roboto-regular", sans-serif;
+}
+#post p, #post h1, #post h2 {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+#post .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 /* Create Section */
