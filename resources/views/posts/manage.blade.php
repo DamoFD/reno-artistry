@@ -10,7 +10,9 @@
             @foreach ($posts as $post)
                 <div class="item-container">
                     <div class="item-text">
+                        <a href="/reno-artistry/public/posts/{{ $post->id }}">
                         <h2 class="font-rale-bold color-secondary">{{ $post->title }}</h2>
+                        </a>
                         <p class="font-roboto-regular color-secondary">{{ $post->created_at->format('F d, Y') }}</p>
                     </div>
                     <div class="btns">
