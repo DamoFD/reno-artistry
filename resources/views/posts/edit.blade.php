@@ -54,7 +54,7 @@
             <p class="error">{{ $message }}</p>
         @enderror
         
-        <button class="color-white-1 font-rale-bold" type="submit">Create Post</button>
+        <button class="color-white-1 font-rale-bold" type="submit">Update Post</button>
     </form>
     </div>
     </section>
