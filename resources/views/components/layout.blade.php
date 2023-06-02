@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover Reno's vibrant art scene through our comprehensive directory. Explore a diverse collection of local art, from sculptures and paintings to graffiti and photography, celebrating the beauty and spirit of the Biggest Little City in the World.">
+
     <title>Reno Artistry</title>
 
     <!-- Custom CSS -->
@@ -14,10 +16,11 @@
     <header id="header" class="header_main">
       <!--Primary Navigation-->
       <nav class="navbar">
-        <a href="/reno-artistry/public">
+        <a aria-label="head to home page" href="/reno-artistry/public">
           <img
             src="{{ asset('images/reno-artistry-logo.webp') }}"
             class="header-img"
+            alt="reno artistry logo"
           />
         </a>
         <div class="menu-toggle" id="mobile-menu">

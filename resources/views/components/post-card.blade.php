@@ -1,8 +1,8 @@
 @props(['post'])
 
 <div class="grid_item">
-    <a class="img_link" href="/reno-artistry/public/posts/{{ $post->id }}">
-    <img class="grid_img" src="{{ $post->image ? asset('storage/' . $post->image) : asset('/images/reno-artistry-logo.webp') }}" />
+    <a class="img_link" href="/reno-artistry/public/posts/{{ $post->id }}" aria-label="view more about {{ $post->title }}">
+    <img class="grid_img" src="{{ $post->image ? asset('storage/' . $post->image) : asset('/images/reno-artistry-logo.webp') }}" alt="{{ $post->title }}" />
     </a>
     <div class="grid_content_container">
         <a href="/reno-artistry/public/posts/{{ $post->id }}">

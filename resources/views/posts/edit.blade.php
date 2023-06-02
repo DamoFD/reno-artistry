@@ -39,7 +39,7 @@
         <label>Image</label>
         <input type="file" name="image" />
 
-        <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('/images/reno-artistry-logo.webp') }}" />
+        <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('/images/reno-artistry-logo.webp') }}" alt="{{ $post->title }}" />
     
         @error('image')
             <p class="error">{{ $message }}</p>
